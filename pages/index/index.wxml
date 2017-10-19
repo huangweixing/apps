@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y="true">
+  <view>
+    <button class="phoneBtn" style="width: 240rpx; height: 70rpx;background-color: #62cdff" bindtap="calling">
+      <image src="../../images/images/phone.png"></image>电话咨询
+    </button>
+    <view class="header" style="width: 750rpx; height: 750rpx; background-color: #00a0ea">
+      <view class="header_hd">
+        <view>3天让您拥有小程序</view>
+        <text>提前布局微信新动态，抢占第一波红利</text>
+      </view>
+      <view class="header_img">
+        <image src="../../images/images/haibaotu.png"></image>
+      </view>
+    </view>
+    <view class="customer">
+      <view class="more">
+        <view class="more_hd">多种行业, 量身定制</view>
+        <view class="more_ft">品牌客户</view>
+      </view>
+      <view class="customer_collection" style="height:650rpx;">
+        <block wx:for="{{customers}}">
+          <view name="{{item.itemName}}" style="width: 190rpx; height: 105rpx;border: 1rpx solid #e5e5e5; border-radius: 10rpx;">
+            <image src="{{item.url}}" style="width: 100px;height: 100%;"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="information">
+      <view class="information_hd">
+        <view class="hd1">辰锦为不同行业</view>
+        <view class="hd2">提供小程序能力</view>
+        <view class="hd3">以微信为媒介，一站式解决方案</view>
+      </view>
+      <view class="information_ft">
+        <scroll-view scroll-x="true" class="scrollX">
+          <view class="jichu" >
+            <image src="../../images/images/jichu.png" style="width: 480rpx; height: 920rpx"></image>
+          </view>
+          <view class="zixun" >
+            <image src="../../images/images/zixun.png" style="width: 480rpx; height: 920rpx"></image>
+          </view>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="ability">
+      <view class="ability_hd">
+        <view>微信持续赋能小程序</view>
+        <text>全面提升公司品牌、公司营销、获取用户的新能力</text>
+      </view>
+      <view class="ability_img">
+        <image src="../../images/images/nengli.png"></image>
+      </view>
+    </view>
+    <view class="core">
+      <view class="core_hd">
+        <view>核心应用场景</view>
+      </view>
+      <view class="core_img">
+        <image src="../../images/images/core.png"></image>
+      </view>
+    </view>
+  </view>
+</scroll-view>
